@@ -49,6 +49,7 @@
     max-width: 1000px;
     margin: 0 auto;
     color: var(--color-accent);
+
     /* gradient text */
     background: linear-gradient(90deg, var(--color-accent), var(--color-accent-2));
     -webkit-background-clip: text;

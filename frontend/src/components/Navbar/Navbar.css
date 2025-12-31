@@ -53,6 +53,12 @@
     border: 1px solid var(--color-accent);
     border-radius: 25px;
     transition: 0.4s ease;
+    font-weight: 500;
+}
+
+.navbar-actions a.about-us {
+    background: var(--color-accent);
+    color: white;
 }
 
 .navbar-actions a:hover {
