@@ -13,6 +13,10 @@
     background-color: var(--bg-dark);
 }
 
+.navbar-homepage-link {
+    text-decoration: none;
+}
+
 .navbar-logo {
     display: flex;
     align-items: center;
@@ -39,6 +43,9 @@
     text-decoration: none;
     font-weight: thin;
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .navbar-actions {
@@ -54,11 +61,6 @@
     border-radius: 25px;
     transition: 0.4s ease;
     font-weight: 500;
-}
-
-.navbar-actions a.about-us {
-    background: var(--color-accent);
-    color: white;
 }
 
 .navbar-actions a:hover {

@@ -1,0 +1,117 @@
+.contact {
+    width: calc(100vw - 20px);
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-job-status {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 240px;
+    height: 30px;
+    border-radius: 20px;
+    background: #0a412da3;
+    border: 1px solid #34d399;
+    color: #34d399;
+    font-size: 0.9rem;
+}
+
+.contact-title {
+    font-size: 5rem;
+}
+
+.contact-title span {
+    /* text gradient */
+    background: linear-gradient(45deg, var(--color-accent), var(--color-accent-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-info {
+    font-size: 1.3rem;
+    width: 60%;
+    color: var(--text-dark);
+}
+
+.contact-info span {
+    color: var(--color-accent-2);
+    font-weight: bold;
+}
+
+.contact-profiles-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-accent-text);
+}
+
+.contact-profiles-list {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact-profiles-list a {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contact-profile {
+    border-radius: 10px;
+    background: var(--bg-dark-2);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 200px;
+    border: 1px solid var(--color);
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.contact-profile .icon {
+    /* background: var(--color-light); */
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.contact-profile .icon::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: var(--color);
+    filter: blur(20px);
+}
+
+.contact-profile.linkedin {
+    --color: #71b7fb;
+    --color-light: #15212d;
+}
+
+.contact-profile.github {
+    --color: #238636;
+    --color-light: #071d0c;
+}
+
+.contact-profile.leetcode {
+    --color: #ffa116;
+    --color-light: rgb(52, 43, 27);
+}
